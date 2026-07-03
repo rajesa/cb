@@ -1,0 +1,72 @@
+SFC Apollo Service Leaf Switches (Free-Form)
+Config Template
+! Inbound — Receive 0/0 from SS-vDOM
+ip prefix-list PL-SHARED-SSvDOM-RCV seq 10 permit 0.0.0.0/0
+!
+route-map RMAP-SHARED-SSvDOM-RCV permit 10
+  match ip address prefix-list PL-SHARED-SSvDOM-RCV
+  set local-preference 200
+!
+!
+! DC1 Summary Routes
+ip prefix-list PL-DC1-SUMMARY seq 10 permit 10.224.16.0/20
+ip prefix-list PL-DC1-SUMMARY seq 20 permit 10.224.32.0/20
+ip prefix-list PL-DC1-SUMMARY seq 30 permit 10.224.48.0/21
+ip prefix-list PL-DC1-SUMMARY seq 40 permit 10.224.96.0/19
+!
+! DC2 Summary Routes
+ip prefix-list PL-DC2-SUMMARY seq 10 permit 10.224.144.0/20
+ip prefix-list PL-DC2-SUMMARY seq 20 permit 10.224.160.0/20
+ip prefix-list PL-DC2-SUMMARY seq 30 permit 10.224.176.0/21
+ip prefix-list PL-DC2-SUMMARY seq 40 permit 10.224.224.0/19
+!
+! Community list to match DC2 aggregate tag
+ip community-list standard COM-DC2-SUMMARY seq 10 permit 65101:2000
+!
+! Attribute-map applied on DC2 aggregate-address statements
+! Matches DC2 summary prefixes and tags with community 65101:2000
+route-map RMAP-DC2-AGG-ATTR permit 10
+  set community 65101:2000 additive
+!
+!
+! Outbound — Shared-Infra to SS-vDOM
+! Seq 10 — Advertise DC1 Summary Routes as Primary (No Prepend)
+route-map RMAP-SHARED-SSvDOM-ADV permit 10
+  match ip address prefix-list PL-DC1-SUMMARY
+
+! Seq 20 — Advertise DC2 Summary Routes as Backup
+!          Match community tag set by attribute-map
+!          Apply AS-path prepend x3
+route-map RMAP-SHARED-SSvDOM-ADV permit 20
+  match community COM-DC2-SUMMARY
+  set as-path prepend 65101 65101 65101
+!
+!
+router bgp 65101
+  template peer ptmp-extfw-all
+    remote-as 65100
+    password 3 3974ec3f0e842eacc1fc497b934ce29e
+    ebgp-multihop 10
+    timers 3 9
+    address-family ipv4 unicast
+  vrf shared-infra
+    address-family ipv4 unicast
+      ! DC1 Summary Aggregates — Primary (No attribute-map)
+      aggregate-address 10.224.16.0/20 summary-only
+      aggregate-address 10.224.32.0/20 summary-only
+      aggregate-address 10.224.48.0/21 summary-only
+      aggregate-address 10.224.96.0/19 summary-only
+      ! DC2 Summary Aggregates — Backup
+      ! attribute-map tags with community 65101:2000
+      ! Outbound route-map matches community and applies prepend x3
+      aggregate-address 10.224.144.0/20 summary-only attribute-map RMAP-DC2-AGG-ATTR
+      aggregate-address 10.224.160.0/20 summary-only attribute-map RMAP-DC2-AGG-ATTR
+      aggregate-address 10.224.176.0/21 summary-only attribute-map RMAP-DC2-AGG-ATTR
+      aggregate-address 10.224.224.0/19 summary-only attribute-map RMAP-DC2-AGG-ATTR
+    neighbor 10.224.12.1
+      inherit peer ptmp-extfw-all
+      description ssvDOM_ext-fw
+      update-source loopback101
+      route-map RMAP-SHARED-SSvDOM-RCV in
+      route-map RMAP-SHARED-SSvDOM-ADV out
+!
