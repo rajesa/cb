@@ -1,72 +1,67 @@
-SFC Apollo Service Leaf Switches (Free-Form)
-Config Template
-! Inbound — Receive 0/0 from SS-vDOM
-ip prefix-list PL-SHARED-SSvDOM-RCV seq 10 permit 0.0.0.0/0
 !
-route-map RMAP-SHARED-SSvDOM-RCV permit 10
-  match ip address prefix-list PL-SHARED-SSvDOM-RCV
+ip prefix-list PL-ALL-MGSFW-RCV seq 10 permit 0.0.0.0/0
+!
+route-map RMAP-ALL-MGSFW-RCV permit 10
+  match ip address prefix-list PL-ALL-MGSFW-RCV
   set local-preference 200
 !
+ip as-path access-list ASP-LOCAL seq 10 permit "^$"
+ip prefix-list PL-HOST-ROUTES seq 5 permit 0.0.0.0/0 eq 32
 !
-! DC1 Summary Routes
-ip prefix-list PL-DC1-SUMMARY seq 10 permit 10.224.16.0/20
-ip prefix-list PL-DC1-SUMMARY seq 20 permit 10.224.32.0/20
-ip prefix-list PL-DC1-SUMMARY seq 30 permit 10.224.48.0/21
-ip prefix-list PL-DC1-SUMMARY seq 40 permit 10.224.96.0/19
+route-map RMAP-ALL-MGSFW-ADV permit 10
+  match as-path ASP-LOCAL
+route-map RMAP-ALL-MGSFW-ADV deny 20
+  match ip address prefix-list PL-HOST-ROUTES 
 !
-! DC2 Summary Routes
-ip prefix-list PL-DC2-SUMMARY seq 10 permit 10.224.144.0/20
-ip prefix-list PL-DC2-SUMMARY seq 20 permit 10.224.160.0/20
-ip prefix-list PL-DC2-SUMMARY seq 30 permit 10.224.176.0/21
-ip prefix-list PL-DC2-SUMMARY seq 40 permit 10.224.224.0/19
+ip as-path access-list ASP-LOCALAS seq 5 permit "_65104$"
+ip prefix-list PL-INFRA-MGSFW-ADV seq 10 permit 0.0.0.0/0
 !
-! Community list to match DC2 aggregate tag
-ip community-list standard COM-DC2-SUMMARY seq 10 permit 65101:2000
-!
-! Attribute-map applied on DC2 aggregate-address statements
-! Matches DC2 summary prefixes and tags with community 65101:2000
-route-map RMAP-DC2-AGG-ATTR permit 10
-  set community 65101:2000 additive
-!
-!
-! Outbound — Shared-Infra to SS-vDOM
-! Seq 10 — Advertise DC1 Summary Routes as Primary (No Prepend)
-route-map RMAP-SHARED-SSvDOM-ADV permit 10
-  match ip address prefix-list PL-DC1-SUMMARY
-
-! Seq 20 — Advertise DC2 Summary Routes as Backup
-!          Match community tag set by attribute-map
-!          Apply AS-path prepend x3
-route-map RMAP-SHARED-SSvDOM-ADV permit 20
-  match community COM-DC2-SUMMARY
-  set as-path prepend 65101 65101 65101
-!
+route-map RMAP-INFRA-MGSFW-ADV permit 10
+  match ip address prefix-list PL-INFRA-MGSFW-ADV 
+route-map RMAP-INFRA-MGSFW-RCV permit 10
+  match as-path ASP-LOCALAS
 !
 router bgp 65101
-  template peer ptmp-extfw-all
-    remote-as 65100
+  template peer ptmp-mgsfw-all
+    bfd multihop
+    remote-as 65103
     password 3 3974ec3f0e842eacc1fc497b934ce29e
     ebgp-multihop 10
-    timers 3 9
     address-family ipv4 unicast
+      route-map RMAP-ALL-MGSFW-RCV in
+      route-map RMAP-ALL-MGSFW-ADV out
+  vrf ops-control
+    address-family ipv4 unicast
+    neighbor 10.224.11.41
+      inherit peer ptmp-mgsfw-all
+      description ops-control_mgsfw
+      local-as 65104 no-prepend replace-as
+      update-source loopback102
+  vrf ops-data
+    address-family ipv4 unicast
+    neighbor 10.224.11.49
+      inherit peer ptmp-mgsfw-all
+      description ops-data_mgsfw
+      local-as 65104 no-prepend replace-as
+      update-source loopback103
+  vrf ocp-control
+    address-family ipv4 unicast
+    neighbor 10.224.11.57
+      inherit peer ptmp-mgsfw-all
+      description ocp-control_mgsfw
+      local-as 65104 no-prepend replace-as
+      update-source loopback104
   vrf shared-infra
     address-family ipv4 unicast
-      ! DC1 Summary Aggregates — Primary (No attribute-map)
-      aggregate-address 10.224.16.0/20 summary-only
-      aggregate-address 10.224.32.0/20 summary-only
-      aggregate-address 10.224.48.0/21 summary-only
-      aggregate-address 10.224.96.0/19 summary-only
-      ! DC2 Summary Aggregates — Backup
-      ! attribute-map tags with community 65101:2000
-      ! Outbound route-map matches community and applies prepend x3
-      aggregate-address 10.224.144.0/20 summary-only attribute-map RMAP-DC2-AGG-ATTR
-      aggregate-address 10.224.160.0/20 summary-only attribute-map RMAP-DC2-AGG-ATTR
-      aggregate-address 10.224.176.0/21 summary-only attribute-map RMAP-DC2-AGG-ATTR
-      aggregate-address 10.224.224.0/19 summary-only attribute-map RMAP-DC2-AGG-ATTR
-    neighbor 10.224.12.1
-      inherit peer ptmp-extfw-all
-      description ssvDOM_ext-fw
+    neighbor 10.224.11.33
+      remote-as 65103
+      local-as 65102 no-prepend replace-as
+      description shared-infra_mgsfw
+      password 3 3974ec3f0e842eacc1fc497b934ce29e
       update-source loopback101
-      route-map RMAP-SHARED-SSvDOM-RCV in
-      route-map RMAP-SHARED-SSvDOM-ADV out
+      ebgp-multihop 10
+      bfd multihop
+      address-family ipv4 unicast
+        route-map RMAP-INFRA-MGSFW-RCV in
+        route-map RMAP-INFRA-MGSFW-ADV out
 !
