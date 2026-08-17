@@ -1,0 +1,764 @@
+interfaceName,switchId,interfaceType,mode,networkOSType,adminState,allowedVlans,bpduFilter,bpduGuard,cdp,copyDescription,duplexMode,lacpPortPriority,lacpRate,lacpSuspend,lacpVpcConvergence,linkType,mirrorConfig,mtu,negotiateAuto,netflow,peer1MemberPorts,peer1PortChannelConfiguration,peer1PortChannelDescription,peer1PortChannelId,peer2MemberPorts,peer2PortChannelConfiguration,peer2PortChannelDescription,peer2PortChannelId,peerSwitchId,pfc,policyType,portChannelMode,portTypeEdgeTrunk,ptp,qos,speed,stormControl,stormControlAction,vlanMapping
+vPC201,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d010-m3-02-2-bond0",201,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d010-m3-02-2-bond0",201,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,,false
+vPC202,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d010-m3-02-2-bond1",202,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d010-m3-02-2-bond1",202,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC203,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d011-m3-02-4-bond0",203,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d011-m3-02-4-bond0",203,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC204,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d011-m3-02-4-bond1",204,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d011-m3-02-4-bond1",204,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC205,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d012-m3-02-6-bond0",205,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d012-m3-02-6-bond0",205,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC206,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d012-m3-02-6-bond1",206,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d012-m3-02-6-bond1",206,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC207,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d013-m3-02-8-bond0",207,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d013-m3-02-8-bond0",207,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC208,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d013-m3-02-8-bond1",208,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d013-m3-02-8-bond1",208,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC209,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d014-m3-02-10-bond0",209,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d014-m3-02-10-bond0",209,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC210,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d014-m3-02-10-bond1",210,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d014-m3-02-10-bond1",210,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC211,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d015-m3-02-12-bond0",211,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d015-m3-02-12-bond0",211,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC212,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d015-m3-02-12-bond1",212,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d015-m3-02-12-bond1",212,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC213,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d016-m3-02-14-bond0",213,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d016-m3-02-14-bond0",213,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC214,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d016-m3-02-14-bond1",214,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d016-m3-02-14-bond1",214,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC215,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d017-m3-02-16-bond0",215,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d017-m3-02-16-bond0",215,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC216,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d017-m3-02-16-bond1",216,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d017-m3-02-16-bond1",216,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC217,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d018-m3-02-18-bond0",217,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d018-m3-02-18-bond0",217,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC218,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d018-m3-02-18-bond1",218,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d018-m3-02-18-bond1",218,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC219,FLM300309CZ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"fast",false,false,"auto",false,"jumbo",true,false,"[""eth1/19-20""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bplcmm002-m3-02-20-bond0",219,"[""eth1/19-20""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bplcmm002-m3-02-20-bond0",219,"FLM30050K9E",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC201,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d019-m3-03-2-bond0",201,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d019-m3-03-2-bond0",201,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC202,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d019-m3-03-2-bond1",202,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d019-m3-03-2-bond1",202,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC203,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d020-m3-03-4-bond0",203,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d020-m3-03-4-bond0",203,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC204,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d020-m3-03-4-bond1",204,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d020-m3-03-4-bond1",204,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC205,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d021-m3-03-6-bond0",205,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d021-m3-03-6-bond0",205,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC206,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d021-m3-03-6-bond1",206,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d021-m3-03-6-bond1",206,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC207,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d022-m3-03-8-bond0",207,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d022-m3-03-8-bond0",207,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC208,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d022-m3-03-8-bond1",208,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d022-m3-03-8-bond1",208,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC209,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d023-m3-03-10-bond0",209,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d023-m3-03-10-bond0",209,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC210,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d023-m3-03-10-bond1",210,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d023-m3-03-10-bond1",210,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC211,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d024-m3-03-12-bond0",211,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d024-m3-03-12-bond0",211,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC212,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d024-m3-03-12-bond1",212,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d024-m3-03-12-bond1",212,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC213,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d025-m3-03-14-bond0",213,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d025-m3-03-14-bond0",213,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC214,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d025-m3-03-14-bond1",214,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d025-m3-03-14-bond1",214,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC215,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d026-m3-03-16-bond0",215,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d026-m3-03-16-bond0",215,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC216,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d026-m3-03-16-bond1",216,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d026-m3-03-16-bond1",216,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC217,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d027-m3-03-18-bond0",217,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d027-m3-03-18-bond0",217,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC218,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d027-m3-03-18-bond1",218,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d027-m3-03-18-bond1",218,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC219,FLM30054DXJ,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"fast",false,false,"auto",false,"jumbo",true,false,"[""eth1/19-20""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bplcmm003-m3-02-20-bond0",219,"[""eth1/19-20""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bplcmm003-m3-02-20-bond0",219,"FLM30050KEN",false,"trunkVpcHost","active",true,false,false,"auto",false,,false
+vPC201,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d028-m3-04-2-bond0",201,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d028-m3-04-2-bond0",201,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC202,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d028-m3-04-2-bond1",202,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d028-m3-04-2-bond1",202,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC203,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d029-m3-04-4-bond0",203,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d029-m3-04-4-bond0",203,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC204,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d029-m3-04-4-bond1",204,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d029-m3-04-4-bond1",204,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC205,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d030-m3-04-6-bond0",205,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d030-m3-04-6-bond0",205,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC206,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d030-m3-04-6-bond1",206,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d030-m3-04-6-bond1",206,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC207,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d031-m3-04-8-bond0",207,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d031-m3-04-8-bond0",207,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC208,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d031-m3-04-8-bond1",208,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d031-m3-04-8-bond1",208,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC209,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d032-m3-04-10-bond0",209,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d032-m3-04-10-bond0",209,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC210,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d032-m3-04-10-bond1",210,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d032-m3-04-10-bond1",210,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC211,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d033-m3-04-12-bond0",211,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d033-m3-04-12-bond0",211,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC212,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d033-m3-04-12-bond1",212,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d033-m3-04-12-bond1",212,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC213,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d034-m3-04-14-bond0",213,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d034-m3-04-14-bond0",213,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC214,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d034-m3-04-14-bond1",214,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d034-m3-04-14-bond1",214,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC215,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d035-m3-04-16-bond0",215,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d035-m3-04-16-bond0",215,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC216,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d035-m3-04-16-bond1",216,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d035-m3-04-16-bond1",216,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC217,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d036-m3-04-18-bond0",217,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d036-m3-04-18-bond0",217,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC218,FLM300309AW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d036-m3-04-18-bond1",218,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d036-m3-04-18-bond1",218,"FLM30023EBK",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC201,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d037-m3-05-2-bond0",201,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d037-m3-05-2-bond0",201,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC202,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d037-m3-05-2-bond1",202,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d037-m3-05-2-bond1",202,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC203,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d038-m3-05-4-bond0",203,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d038-m3-05-4-bond0",203,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC204,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d038-m3-05-4-bond1",204,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d038-m3-05-4-bond1",204,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC205,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d039-m3-05-6-bond0",205,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d039-m3-05-6-bond0",205,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC206,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d039-m3-05-6-bond1",206,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d039-m3-05-6-bond1",206,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC207,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d040-m3-05-8-bond0",207,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d040-m3-05-8-bond0",207,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC208,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d040-m3-05-8-bond1",208,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d040-m3-05-8-bond1",208,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC209,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d041-m3-05-10-bond0",209,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d041-m3-05-10-bond0",209,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC210,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d041-m3-05-10-bond1",210,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d041-m3-05-10-bond1",210,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC211,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d042-m3-05-12-bond0",211,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d042-m3-05-12-bond0",211,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC212,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d042-m3-05-12-bond1",212,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d042-m3-05-12-bond1",212,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC213,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d043-m3-05-14-bond0",213,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d043-m3-05-14-bond0",213,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC214,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d043-m3-05-14-bond1",214,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d043-m3-05-14-bond1",214,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC215,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d044-m3-05-16-bond0",215,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d044-m3-05-16-bond0",215,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC216,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d044-m3-05-16-bond1",216,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d044-m3-05-16-bond1",216,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC217,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d045-m3-05-18-bond0",217,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d045-m3-05-18-bond0",217,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC218,FLM30023DZW,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d045-m3-05-18-bond1",218,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d045-m3-05-18-bond1",218,"FLM300238L2",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC201,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d046-m3-06-2-bond0",201,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d046-m3-06-2-bond0",201,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC202,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d046-m3-06-2-bond1",202,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d046-m3-06-2-bond1",202,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC203,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d047-m3-06-4-bond0",203,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d047-m3-06-4-bond0",203,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC204,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d047-m3-06-4-bond1",204,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d047-m3-06-4-bond1",204,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC205,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d048-m3-06-6-bond0",205,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d048-m3-06-6-bond0",205,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC206,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d048-m3-06-6-bond1",206,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d048-m3-06-6-bond1",206,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC207,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d049-m3-06-8-bond0",207,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d049-m3-06-8-bond0",207,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC208,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d049-m3-06-8-bond1",208,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d049-m3-06-8-bond1",208,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC209,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d050-m3-06-10-bond0",209,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d050-m3-06-10-bond0",209,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC210,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d050-m3-06-10-bond1",210,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d050-m3-06-10-bond1",210,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC211,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d051-m3-06-12-bond0",211,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d051-m3-06-12-bond0",211,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC212,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d051-m3-06-12-bond1",212,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d051-m3-06-12-bond1",212,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC213,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d052-m3-06-14-bond0",213,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d052-m3-06-14-bond0",213,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC214,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d052-m3-06-14-bond1",214,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d052-m3-06-14-bond1",214,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC215,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d053-m3-06-16-bond0",215,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d053-m3-06-16-bond0",215,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC216,FLM30054E11,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d053-m3-06-16-bond1",216,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d053-m3-06-16-bond1",216,"FLM30050KD7",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC201,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d001-m3-01-2-bond0",201,"[""eth1/1""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d001-m3-01-2-bond0",201,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,,false
+vPC202,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d001-m3-01-2-bond1",202,"[""eth1/2""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d001-m3-01-2-bond1",202,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC203,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d002-m3-01-4-bond0",203,"[""eth1/3""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d002-m3-01-4-bond0",203,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC204,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d002-m3-01-4-bond1",204,"[""eth1/4""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d002-m3-01-4-bond1",204,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC205,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d003-m3-01-6-bond0",205,"[""eth1/5""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d003-m3-01-6-bond0",205,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC206,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d003-m3-01-6-bond1",206,"[""eth1/6""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d003-m3-01-6-bond1",206,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC207,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d004-m3-01-8-bond0",207,"[""eth1/7""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d004-m3-01-8-bond0",207,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC208,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d004-m3-01-8-bond1",208,"[""eth1/8""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0104bprhoso01d004-m3-01-8-bond1",208,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC209,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d005-m3-01-10-bond0",209,"[""eth1/9""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d005-m3-01-10-bond0",209,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC210,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d005-m3-01-10-bond1",210,"[""eth1/10""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0105bprhoso01d005-m3-01-10-bond1",210,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC211,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d006-m3-01-12-bond0",211,"[""eth1/11""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d006-m3-01-12-bond0",211,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC212,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d006-m3-01-12-bond1",212,"[""eth1/12""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0106bprhoso01d006-m3-01-12-bond1",212,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC213,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d007-m3-01-14-bond0",213,"[""eth1/13""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d007-m3-01-14-bond0",213,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC214,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d007-m3-01-14-bond1",214,"[""eth1/14""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bprhoso01d007-m3-01-14-bond1",214,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC215,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d008-m3-01-16-bond0",215,"[""eth1/15""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d008-m3-01-16-bond0",215,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC216,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d008-m3-01-16-bond1",216,"[""eth1/16""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0102bprhoso01d008-m3-01-16-bond1",216,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC217,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d009-m3-01-18-bond0",217,"[""eth1/17""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d009-m3-01-18-bond0",217,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC218,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"normal",false,false,"auto",false,"jumbo",true,false,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d009-m3-01-18-bond1",218,"[""eth1/18""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0103bprhoso01d009-m3-01-18-bond1",218,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,"default",false
+vPC219,FLM30054DZC,vpc,trunk,nx-os,true,"none","default","enable",true,false,"auto",32768,"fast",false,false,"auto",false,"jumbo",true,false,"[""eth1/19-20""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bplcmm001-m3-01-20-bond0",219,"[""eth1/19-20""]","no lacp suspend-individual
+storm-control broadcast level 10.00
+storm-control multicast level 10.00
+storm-control unicast level 10.00","to_sc0101bplcmm001-m3-01-20-bond0",219,"FLM30023E5U",false,"trunkVpcHost","active",true,false,false,"auto",false,,false
